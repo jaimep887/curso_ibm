@@ -20,4 +20,48 @@ We will use the following command lines to this
 
 Once we add our SSH key ot out git acount we area ready to start to work with git on local terminal.
 
-For 
+The firts steo is to clone our git repository we area capable of this using the folllowinf comand
+
+{Bash}
+
+	git clone "ssh direction of repository"
+
+Now that we already clone our repository we can create and modify file on local way. For a saer way of work we can create a branch remotely and then ask for a pull request or actualize the main repository manually. For create and move from workin directory to a branch we can use the following commands:
+
+{Bash}
+
+	# For create a branch use the folllowinf command
+
+	git branch "Name of the branch"
+
+	# To switch between branches.
+
+	git checkout "name of branch"
+
+The manage of files localy don't requiere any special instruction but when we want to update the repository we need to commit and push the file. Also for detect a directory on git we need to create a README.md file inside de directory.
+
+{Bash}
+
+	#This command is used for add a file to directory
+
+	git add "file"
+
+	#This command is used for comment the files we recently generate
+
+	git commit -m "Commit"
+
+	# Finally we push the changes of the file
+
+	git push
+
+The merge of new file could be permomed via github web page or via command line. For command line merge we use the foollowin command
+
+{Bash}
+
+	# Firts we need to be on main command line
+
+	git checkout "name of main command line"
+
+	# Then we merge branches
+
+	git marge "name of secondary branch"
